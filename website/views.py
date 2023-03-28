@@ -17,8 +17,8 @@ def home(request):
         else:
             messages.success(request, "There was an error logging in, please try again...")
             return redirect('home')
-        
-    return render(request, 'home.html', {})
+    else:    
+        return render(request, 'home.html', {})
 
 def login_user(request):
     pass
