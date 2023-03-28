@@ -12,8 +12,10 @@ def home(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            message.success(request, "You have been logged in !")
+            messages.success(request, "You have been logged in !")
             return redirect('home')
+        else:
+            messages.success(request, "There ")
         
     return render(request, 'home.html', {})
 
