@@ -58,3 +58,4 @@ def register_user(request):
 
 def customer_record(request, pk):
     if request.user.is_authenticated:
+        # Look up Records
