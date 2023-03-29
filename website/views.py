@@ -57,4 +57,4 @@ def register_user(request):
 
 
 def customer_record(request, pk):
-    pass
+    if request.user.is_authenticated:
