@@ -66,7 +66,7 @@ def customer_record(request, pk):
         return redirect('home')
     
 
-def delete_customer(request, pk):
+def delete_record(request, pk):
     if request.user.is_authenticated:
         delete_it = Record.objects.get(id=pk)
         delete_it.delete()
