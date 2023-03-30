@@ -85,7 +85,7 @@ def add_record(request):
                 add_record = form.save()
                 messages.success(request, "Record Added")
                 return redirect('home')
-            return render(request, 'add_record.html', {'form':form})
+        return render(request, 'add_record.html', {'form':form})
     else:
         messages.success(request, "You must be logged in")
         return redirect('home')
