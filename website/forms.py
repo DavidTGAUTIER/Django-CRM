@@ -35,4 +35,11 @@ class SignUpForm(UserCreationForm):
 
 # Create Add Record Form
 class AddRecordForm(forms.ModelForm):
-    pass
+    first_name = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"First Name"}))
+    last_name = 
+    email = 
+    phone = 
+    address = 
+    city = 
+    state = 
+    zipcode = 
